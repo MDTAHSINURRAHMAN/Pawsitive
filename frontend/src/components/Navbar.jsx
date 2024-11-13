@@ -1,6 +1,9 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const products = useSelector((state) => state.cart.products);
+  console.log(products)
   return (
     <div>
       <header className="fixed-nav-bar w-nav">
