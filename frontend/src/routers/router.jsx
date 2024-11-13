@@ -3,6 +3,8 @@ import App from "../App";
 import Home from "../pages/home/Home";
 import CategoryPage from "../pages/category/CategoryPage";
 import Search from "../pages/search/Search";
+import ShopPage from "../pages/shop/ShopPage";
+import SingleProduct from "../pages/shop/productDetails/SingleProduct";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,8 @@ const router = createBrowserRouter([
         element: <CategoryPage></CategoryPage>,
       },
       { path: "/search", element: <Search></Search> },
+      { path: "/shop", element: <ShopPage></ShopPage> },
+      { path: "/shop/:id", element: <SingleProduct></SingleProduct> },
     ],
   },
 ]);
